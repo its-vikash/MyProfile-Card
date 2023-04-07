@@ -4,8 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./Assets/Favicon.ico" type="image/x-icon">
+=======
+  <link rel="shortcut icon" href="./Assets/MyFavicon.ico" type="image/x-icon">
+  <link id="theme" rel="stylesheet" type="text/css" href="greenstyle.css"/>  
+    <script>
+        function toggleTheme() {
+            var theme = document.getElementById("theme");
+            if (theme.getAttribute('href') == 'greenstyle.css') 
+            {
+                theme.setAttribute('href', 'bluestyle.css');
+            } 
+            else 
+            {
+                theme.setAttribute('href', 'greenstyle.css');
+            }
+        }
+
+        function toggleText(button_id) {
+          var text = document.getElementById(button_id).firstChild;
+          text.data = text.data == "GreenStyle" ? "BlueStyle" : "GreenStyle";
+        }
+
+    </script>
+>>>>>>> 979c854 (Updated  changes)
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <title>Profile Card ~ Vikash Patel</title>
 </head>
@@ -14,6 +38,10 @@
   <div class="content">
     <section class="glass" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
       <header>
+<<<<<<< HEAD
+=======
+        <button class="button-85" role="button" id="myButton" onclick="toggleTheme();toggleText(this.id)">GreenStyle</button>
+>>>>>>> 979c854 (Updated  changes)
         <img src="./Assets/MyPic.png" alt="avatar" class="avatar" />
         <h1>Vikash Patel</h1><br>
         <p>Prayagraj, Uttar Pradesh, India</p>
@@ -25,11 +53,19 @@
         <p>Competitive Programmer <br> Android App Developer <br> Web Developer <br> Working on Data Science</p>
         <div class="socialmedia">
           <a href="https://www.linkedin.com/in/its-vikash/" target="_blank" id="linkedin">
+<<<<<<< HEAD
             <img src="./assets/linkedin.svg" alt="linkedin">
             LinkedIn
           </a>
           <a href="https://github.com/its-vikash" target="_blank">
             <img src="./assets/github.svg" alt="github">
+=======
+            <img src="./assets/LinkedIn.png" alt="linkedin">
+            LinkedIn
+          </a>
+          <a href="https://github.com/its-vikash" target="_blank">
+            <img src="./assets/LinkedIn.png" alt="github">
+>>>>>>> 979c854 (Updated  changes)
             GitHub
           </a>
           

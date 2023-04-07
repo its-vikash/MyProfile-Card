@@ -1,0 +1,340 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
+
+}
+
+button {
+  cursor: pointer;
+}
+
+.circle1,
+.circle2 {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(196, 196, 196, 0.5)), to(rgba(10, 161, 65, 0.3)));
+  background: linear-gradient(to right bottom, rgba(221, 178, 93, 0.5), rgb(124, 237, 107));
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.circle1 {
+  bottom: 3%;
+  right: 22%;
+}
+
+.circle2 {
+  top: 3%;
+  left: 22%;
+}
+
+@media (max-width: 1024px) {
+  .circle1 {
+    bottom: 3%;
+    right: 15%;
+  }
+  .circle2 {
+    top: 3%;
+    left: 15%;
+  }
+}
+
+@media (max-width: 900px) {
+  .circle1 {
+    bottom: 3%;
+    right: 10%;
+  }
+  .circle2 {
+    top: 3%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 750px) {
+  .circle1 {
+    bottom: 3%;
+    right: 5%;
+  }
+  .circle2 {
+    top: 3%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .circle1 {
+    bottom: 3%;
+    right: -5%;
+  }
+  .circle2 {
+    top: 3%;
+    left: -5%;
+  }
+}
+
+.content {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left bottom, right top, from(#5b4463), to(#28223f));
+  background: linear-gradient(to right top, #0aa274, #accf1f);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .glass {
+  min-height: 55rem;
+  width: 37rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(2, 255, 44, 0.5)), to(rgba(0, 255, 132, 0.3)));
+  background: linear-gradient(to right bottom, rgba(0, 255, 115, 0.5), rgba(2, 255, 19, 0.3));
+  border-radius: 2rem;
+  z-index: 3;
+  -webkit-backdrop-filter: blur(1.2rem);
+          backdrop-filter: blur(1.2rem);
+}
+
+.content .glass header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .glass header .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  border: 2px #ffa200 solid;
+  margin: 1.5rem 0 1rem 0;
+  padding: 0.8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content .glass header h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #960e0e;
+}
+
+.content .glass header p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.content .glass main p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  padding: 1.8rem 5rem 2rem 5rem;
+}
+
+.content .glass main .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .glass main .socialmedia a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #6a00ff;
+  background-color: #27e69ab8;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding: 1rem 1.4rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.content .glass main .socialmedia a img {
+  width: 2.8rem;
+  margin-right: 0.8rem;
+}
+
+.content .glass main .socialmedia a:hover {
+  background-color: #00ff4c;
+}
+
+.content .glass main .socialmedia #linkedin {
+  margin-right: 2.2rem;
+}
+
+.content .glass footer {
+  color: #920a0a;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0px 0px 20px 20px;
+  padding: 1rem 2.5rem;
+}
+
+.content .glass footer h3 {
+  font-size: 2.0rem;
+  font-weight: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0.4rem 1rem 0;
+  border: rgba(255, 255, 255, 0.1);
+}
+
+.content .glass footer h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 1px solid rgba(133, 0, 0, 0.1);
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.content .glass footer .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  margin-top: 0.2rem;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
